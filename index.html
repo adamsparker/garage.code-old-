@@ -9,6 +9,11 @@
 </head>
 <body>
     
+    <!-- Scene -->
+
+    <div class="scene__container"></div>
+
+
     <!-- header -->
 
     <div class="container">
@@ -41,7 +46,7 @@
         <div class="main__side"></div>
         <div class="main__inner">
             <div class="main-page page-1">
-                <h1 class="main__title">Welcome to our garage, We make software <br> and design products</h1>
+                <h1 class="main__title">Welcome to our garage, <br> We make software <br> and design products</h1>
                 <p class="main__subtitle">I'm a software developer, product designer and bioinformatician. I'm particularly interested in the ways technology can enhance intuition and creativity.</p>
                 <div class="main-block">
                     <div class="main-block__inner">
@@ -83,6 +88,56 @@
             
         </div>
     </section>
-    
+
+    <script src="three/build/three.js"></script>
+
+    <script>
+     const scene = new THREE.Scene();
+			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			const renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+
+			const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+			const material = new THREE.MeshBasicMaterial( { color: 0x13BE78 } );
+			const cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+
+			camera.position.z = 5;
+
+            window.addEventListener('resize', function()
+
+	        {
+	        var width = window.innerWidth;
+	        var height = window.innerHeight;
+	        renderer.setSize( width, height );
+	        camera.aspect = width / height;
+	        camera.updateProjectionMatrix();
+	        } );
+
+			function animate() {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.001;
+				cube.rotation.y += 0.001;
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+            
+            document.addEventListener( 'mousewheel', (event) => {
+            camera.position.z -=event.deltaY/1000;
+            });
+        
+            var limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+            document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+            console.log(limit);
+
+
+
+    </script>
+
 </body>
 </html>
