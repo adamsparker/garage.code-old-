@@ -9,18 +9,13 @@
 </head>
 <body>
     
-    <!-- Scene -->
-
-    <div class="scene__container"></div>
-
-
     <!-- header -->
 
     <div class="container">
     <header class="header">
         <div class="header__inner">
 
-            <svg class="logo header-logo" viewBox="0 0 260 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="currentColor"/><circle cx="5" cy="25" r="5" fill="currentColor"/><circle cx="35" cy="25" r="5" fill="currentColor"/><circle cx="65" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="25" r="5" fill="currentColor"/><circle cx="95" cy="45" r="5" fill="currentColor"/><circle cx="115" cy="25" r="5" fill="currentColor"/><circle cx="145" cy="5" r="5" fill="currentColor"/><circle cx="35" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="25" r="5" fill="black"/><circle cx="205" cy="25" r="5" fill="currentColor"/><circle cx="235" cy="5" r="5" fill="currentColor"/><circle cx="255" cy="25" r="5" fill="currentColor"/><circle cx="205" cy="5" r="5" fill="currentColor"/></svg>
+            <svg class="logo header-logo" viewBox="0 0 260 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="currentColor"/><circle cx="5" cy="25" r="5" fill="currentColor"/><circle cx="35" cy="25" r="5" fill="currentColor"/><circle cx="65" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="25" r="5" fill="currentColor"/><circle cx="95" cy="45" r="5" fill="currentColor"/><circle cx="115" cy="25" r="5" fill="currentColor"/><circle cx="145" cy="5" r="5" fill="currentColor"/><circle cx="35" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="25" r="5" fill="currentColor"/><circle cx="205" cy="25" r="5" fill="currentColor"/><circle cx="235" cy="5" r="5" fill="currentColor"/><circle cx="255" cy="25" r="5" fill="currentColor"/><circle cx="205" cy="5" r="5" fill="currentColor"/></svg>
 
             <h2 class="header__text">digital "garage" agency <br> ready to help you create</h2>
 
@@ -85,13 +80,16 @@
                 </div>
 
             </div>
-            
+
         </div>
     </section>
 
+    <canvas id="gradient-canvas" data-transition-in>
+
+
     <script src="three/build/three.js"></script>
 
-    <script>
+    <!-- <script>
      const scene = new THREE.Scene();
 			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
@@ -136,6 +134,18 @@
             console.log(limit);
 
 
+
+    </script> -->
+
+    <script type="module">
+
+    import { Gradient } from './scripts/gradient.js'
+
+    // Create your instance
+    const gradient = new Gradient()
+
+    // Call `initGradient` with the selector to your canvas
+    gradient.initGradient('#gradient-canvas')
 
     </script>
 

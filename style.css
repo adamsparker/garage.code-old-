@@ -8,10 +8,7 @@
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
 }
 
-html {
-    overflow: scroll;
-}
-  
+
 ::-webkit-scrollbar {
       width: 0px;
       background: transparent;
@@ -121,6 +118,17 @@ canvas {
     margin-left: 5px;
 }
 
+#gradient-canvas {
+    width:100%;
+    height:100%;
+    --gradient-color-1: #53DF83; 
+    --gradient-color-2: #438e5c; 
+    --gradient-color-3: #284d34;  
+    --gradient-color-4: #7cfef5;
+  
+    /* https://whatamesh.vercel.app/ */
+}
+        
 /*     Page tweaks     */
 
 .page-2-title {
