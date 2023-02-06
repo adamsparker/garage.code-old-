@@ -141,8 +141,7 @@ canvas {
     position: fixed;
     color: #ffffff;
     max-width: 100%;
-    padding: 5em 0;
-    margin: 0em 1em;
+    padding: 5em 1em;
 }
 
 .header__inner {
@@ -213,3 +212,15 @@ canvas {
     transform: rotate(0deg);
     transition: .2s all;
 }
+
+@media (max-width: 700px) {
+
+    .header {
+        position: relative;
+    }
+
+    .main, .main__side, .main__inner {
+        width: unset;
+    }
+}  
+ 
