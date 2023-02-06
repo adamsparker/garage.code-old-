@@ -124,6 +124,7 @@ canvas {
     --gradient-color-2: #032E46; 
     --gradient-color-3: #23B684;  
     --gradient-color-4: #0F595E;
+    
 
   
     /* https://whatamesh.vercel.app/ */
@@ -160,7 +161,7 @@ canvas {
 }
 
 .header-logo {
-    width: 10em;
+    width: 7em;
 }
 
 .header__text {
@@ -205,7 +206,8 @@ canvas {
 }
 
 .main-block {
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
+    background-color: #000000;
     border-radius: 10px;
     padding: 1em;
 }
@@ -236,9 +238,13 @@ canvas {
     background-color: #000000;
     border-radius: 10px;
     margin-bottom: 2em;
+    transition: .2s all;
 }
 
 
+.footer:hover {
+    transform: translate(0, -1em);
+}
 
 .footer__inner {
     display: flex;
