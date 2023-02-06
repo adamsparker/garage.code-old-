@@ -128,7 +128,7 @@ canvas {
   
     /* https://whatamesh.vercel.app/ */
 }
-        
+  
 /*     Page tweaks     */
 
 .page-2-title {
@@ -138,10 +138,19 @@ canvas {
 /*     Header      */
 
 .header {
+    background-color: #000000;
+    border-radius: 0px 0px 10px 10px;
     position: fixed;
     color: #ffffff;
     max-width: 100%;
     padding: 5em 1em;
+    height: 240px;
+    transition: .2s all;
+}
+
+.header:hover {
+    height: 250px;
+    transition: .2s all;
 }
 
 .header__inner {
@@ -212,6 +221,35 @@ canvas {
     transform: rotate(0deg);
     transition: .2s all;
 }
+
+/*     Footer      */
+
+.footer {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    z-index: 200;
+    justify-content: space-around;
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
 
 @media (max-width: 700px) {
 
