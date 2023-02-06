@@ -55,9 +55,26 @@ canvas {
     background-color: #be3513;
 }
 
-.blue {
+.blue { 
     background-color: #13beb5;
 }
+
+.golden {
+    background-color: #a9dd31;
+}
+
+.silver {
+    background-color: #999e8f;
+}
+
+.bronze {
+    background-color: #844545;
+}
+
+.yellow {
+    background-color: #a9dd31;
+}
+
 
 .white {
     background-color: #ffffff;
@@ -125,6 +142,11 @@ canvas {
     --gradient-color-3: #23B684;  
     --gradient-color-4: #0F595E;
     
+  /*--gradient-color-1: #2D3E50; 
+    --gradient-color-2: #01C26E; 
+    --gradient-color-3: #E24C3F;  
+    --gradient-color-4: #F3C40F; */
+
 
   
     /* https://whatamesh.vercel.app/ */
@@ -132,7 +154,7 @@ canvas {
   
 /*     Page tweaks     */
 
-.page-2-title {
+.page-2-title, .page-3-title {
     margin-bottom: 1em;
 }
 
@@ -196,6 +218,7 @@ canvas {
 
 .main__title {
     font-size: clamp(1.7rem, 3.5vw, 5.3rem);
+    /* text-transform: uppercase; ПОСМОТРЕТЬ С БЕКХАНОМ */
 }
 
 .main__subtitle {
@@ -206,22 +229,33 @@ canvas {
 }
 
 .main-block {
-    border: 2px solid #000000;
     background-color: #000000;
     border-radius: 10px;
     padding: 1em;
+    transition: .3s all;
+    background: url(assets/images/block1.png) left no-repeat, #0c0c0c;
+    background-size: min(100%);
+    background-position: 0px 0;
+    filter: grayscale(1);
+
+}
+
+.main-block:hover {
+    background-position: 0px -200px;
+    transition: .3s all;
+    filter: grayscale(0);
 }
 
 .main-block-logo {
     width: 50px;
-    transform: rotate(90deg);
-    transition: .2s all;
+    transform: rotate(0deg);
+    transition: 1s all;
 }
 
 .main-block-logo:hover {
     color: #13BE78;
-    transform: rotate(0deg);
-    transition: .2s all;
+    transform: rotate(360deg);
+    transition: 1s all;
 }
 
 /*     Footer      */
@@ -254,6 +288,32 @@ canvas {
 .footer-link {
     text-transform: uppercase;
     font-size: 1.2rem;
+}
+
+/*     Groups      */
+
+.groups-page {
+    height: 100vh;
+}
+
+.groups-inner {
+    display: flex;
+    margin: 2em 0;
+    justify-content: space-between;
+}
+
+.group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.link-group {
+    padding: 0.5em 0.5em;
+    font-size: 0.8em;
+    font-weight: 700;
 }
 
 
