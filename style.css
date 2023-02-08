@@ -25,6 +25,11 @@ p {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -83,6 +88,10 @@ canvas {
 .container {
     width: 1100px;
     margin: 0 auto;
+}
+
+.width-50 {
+    max-width: 50%;
 }
 
 
@@ -216,9 +225,8 @@ canvas {
 
 .main__subtitle {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 20px;
     margin: 2em 0;
-    max-width: 50%;
 }
 
 .main-block {
@@ -234,7 +242,7 @@ canvas {
 }
 
 .main-block:hover {
-    background-position: 0px -200px;
+    background-position: 0px -150px;
     transition: .3s all;
     filter: grayscale(0);
 }
@@ -356,6 +364,7 @@ canvas {
 
     .header {
         border-radius: 0px 0px 40px 40px;
+        padding: 3em;
     }
 
     .header-logo {
