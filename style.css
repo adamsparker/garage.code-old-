@@ -172,7 +172,7 @@ canvas {
 }
 
 .header:hover {
-    height: 250px;
+    transform: translate(-0em, -1em);
     transition: .2s all;
 }
 
