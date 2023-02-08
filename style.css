@@ -308,6 +308,12 @@ canvas {
     flex-direction: column;
     border-top: 0;
     border-bottom: 0;
+    transition: .2s all;
+}
+
+.group:hover {
+    transform: translate(-1em, -1em);
+    transition: .2s all;
 }
 
 .link-group {
