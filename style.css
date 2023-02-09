@@ -65,15 +65,15 @@ canvas {
 }
 
 .golden {
-    background-color: #a9dd31;
+    background-color: #d9f924;
 }
 
 .silver {
-    background-color: #999e8f;
+    background-color: #babcb6;
 }
 
 .bronze {
-    background-color: #844545;
+    background-color: #a94848;
 }
 
 .yellow {
@@ -92,6 +92,10 @@ canvas {
 
 .width-50 {
     max-width: 50%;
+}
+
+#kill-margin {
+    margin: 0;
 }
 
 
@@ -157,9 +161,6 @@ canvas {
   
 /*     Page tweaks     */
 
-.page-2-title, .page-3-title {
-    margin-bottom: 1em;
-}
 
 /*     Header      */
 
@@ -220,6 +221,7 @@ canvas {
 
 .main__title {
     font-size: clamp(2.7rem, 3.5vw, 5.3rem);
+    margin-bottom: 1em;
     /* text-transform: uppercase; ПОСМОТРЕТЬ С БЕКХАНОМ */
 }
 
@@ -299,7 +301,7 @@ canvas {
 
 .groups-inner {
     display: flex;
-    margin: 2em 0;
+    margin-bottom: 2em;
     justify-content: space-between;
 }
 
