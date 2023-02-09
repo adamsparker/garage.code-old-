@@ -237,14 +237,14 @@ canvas {
     padding: 1em;
     transition: .3s all;
     background: url(assets/images/block1.png) left no-repeat, #0c0c0c;
-    background-size: min(100%);
-    background-position: 0px 0;
+    background-position: center;
+    background-size: 130%;
     filter: grayscale(1);
 
 }
 
 .main-block:hover {
-    background-position: 0px -150px;
+    background-size: 110%;
     transition: .3s all;
     filter: grayscale(0);
 }
@@ -353,17 +353,6 @@ canvas {
         font-size: 2rem;
     }
 
-    .main-block {
-        background-size: min(200%);
-        background-position: -100px;
-    }
-
-    .main-block:hover {
-        background-position: 0px -20px;
-   
-    }
-
-
     .header {
         border-radius: 0px 0px 40px 40px;
         padding: 3em;
@@ -372,5 +361,11 @@ canvas {
     .header-logo {
         width: 10em;
     }
+
 }  
- 
+
+@media (max-width: 1000px) {
+    .main-block, .main-block:hover {
+        background-size: cover;
+    }
+}
