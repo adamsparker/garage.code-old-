@@ -358,6 +358,7 @@ canvas {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .crew-title__inner {
@@ -372,12 +373,12 @@ canvas {
     color: #6d6d6d;
     font-weight: 600;
     font-size: 12px;
-    margin-bottom: 0.5em;
 }
 
 .crew-title {
     text-transform: uppercase;
     line-height: 1.5em;
+    margin: 0.5em 0;
 }
 
 @media (max-width: 700px) {
