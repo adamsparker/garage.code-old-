@@ -334,6 +334,7 @@ canvas {
     flex-wrap: wrap;
 }
 
+
 .crew-member {
     display: flex;
     justify-content: space-between;
@@ -344,6 +345,13 @@ canvas {
     border-radius: 10px;
     margin: 0.5em;
     font-size: clamp(0.5rem, 1.5vw, 0.7rem);
+    transition: .2s all;
+    margin-bottom: 2em;
+}
+
+.crew-member:hover {
+    transform: translate(-0em, -1em);
+    transition: .2s all;
 }
 
 .crew-subtitle__inner {
@@ -363,7 +371,7 @@ canvas {
     text-transform: uppercase;
     color: #6d6d6d;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 0.5em;
 }
 
@@ -406,10 +414,27 @@ canvas {
         width: 10em;
     }
 
+    
 }  
 
 @media (max-width: 1000px) {
     .main-block, .main-block:hover {
         background-size: cover;
+    }
+
+    .main-page {
+        padding: 1em;
+    }
+
+    .crew-member {
+        flex-direction: column;
+    }
+
+    .crew-subtitle__inner, .crew-title__inner {
+        margin: 1em 0;
+    }
+
+    .crew-title {
+        font-size: 2em;
     }
 }
