@@ -414,14 +414,6 @@ canvas {
         width: 10em;
     }
 
-    
-}  
-
-@media (max-width: 1000px) {
-    .main-block, .main-block:hover {
-        background-size: cover;
-    }
-
     .main-page {
         padding: 1em;
     }
@@ -436,5 +428,11 @@ canvas {
 
     .crew-title {
         font-size: 2em;
+    }
+}  
+
+@media (max-width: 1000px) {
+    .main-block, .main-block:hover {
+        background-size: cover;
     }
 }
