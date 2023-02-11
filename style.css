@@ -381,6 +381,11 @@ canvas {
     margin: 0.5em 0;
 }
 
+.crew-job {
+    padding: 0.5em 1em;
+    font-size: 14px;
+}
+
 @media (max-width: 700px) {
 
     .main, .main__side, .main__inner {
