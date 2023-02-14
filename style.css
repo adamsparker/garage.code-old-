@@ -98,6 +98,13 @@ canvas {
     margin: 0;
 }
 
+.blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    backdrop-filter: blur(10px);
+}
 
 .link {
     text-decoration: none;
@@ -384,6 +391,54 @@ canvas {
 .crew-job {
     padding: 0.5em 1em;
     font-size: 14px;
+}
+
+/*    Modal     */
+
+.modal-holder {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    background-color: black;
+    border-radius: 10px;
+    padding: 1em;
+    transition: .2s all;
+}
+
+.modal:hover {
+    transform: translate(-50%, -60%);
+    transition: .2s all;
+}
+
+.modal__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.modal__close {
+   position: fixed;
+   height: 2em;
+   cursor: pointer;
+   transition: .2s all;
+}
+
+.modal__close:hover {
+    color: #be3513;
+    transition: .2s all;
+    transform: rotate(90deg);
+}
+
+.modal-feature-title {
+    text-align: center;
+    margin: 2em 1em;
 }
 
 @media (max-width: 700px) {

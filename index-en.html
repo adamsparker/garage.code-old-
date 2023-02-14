@@ -9,7 +9,20 @@
 </head>
 <body>
 
-   <!-- header -->
+    <!-- modal -->
+    <div class="modal-holder" id="modal-feature">
+        <div class="blur"></div>
+        <div class="modal modal-feature">
+            <div class="modal__inner">
+                <svg class="modal__close" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.37521 23.5122C5.8845 24.0098 6.74348 24.0034 7.2284 23.5185L14.4373 16.3096L21.642 23.5164C22.1354 24.0098 22.9934 24.0173 23.4931 23.5101C23.9928 23.0008 23.9949 22.162 23.5015 21.6665L16.2968 14.4501L23.5015 7.24536C23.9949 6.75201 24.0024 5.90358 23.4931 5.40389C22.9838 4.8946 22.1354 4.89249 21.642 5.39546L14.4373 12.6002L7.2284 5.39335C6.74348 4.90093 5.87489 4.88288 5.37521 5.40178C4.87764 5.91108 4.88396 6.75833 5.36888 7.24325L12.5778 14.4501L5.36888 21.6707C4.88396 22.1535 4.86803 23.0125 5.37521 23.5122Z" fill="currentColor"/></svg>
+                <h2 class="modal__title modal-feature-title">Feature is soon <br> to be available</h2>
+                <span class="flex-fill"></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- header -->
     <div class="container">
     <header class="header">
         <div class="header__inner">
@@ -19,11 +32,11 @@
             <h2 class="header__text">digital "garage" agency <br> we all start somewhere</h2>
 
             <div class="link__inner">
-                <a href="#" class="link nav--link">home</a>
-                <a href="#" class="link nav--link">work</a>
-                <a href="#" class="link nav--link">about us</a>
-                <a href="#" class="link nav--link">archive</a>
-                <a href="#" class="link nav--link">contacts</a>
+                <a class="link nav--link modal-able" data-modal="modal-feature">home</a>
+                <a class="link nav--link modal-able" data-modal="modal-feature">work</a>
+                <a class="link nav--link modal-able" data-modal="modal-feature">about us</a>
+                <a class="link nav--link modal-able" data-modal="modal-feature">archive</a>
+                <a class="link nav--link modal-able" data-modal="modal-feature">contacts</a>
             </div>
             </div>
 
@@ -32,7 +45,7 @@
             <div class="link__inner">
                 <a href="index-en.html" class="link nav--link">ENGLISH</a>
                 <a href="index.html" class="link nav--link">РУСКИЙ</a>
-                <a href="#" class="link nav--link">НОХЧИЙН</a>
+                <a href="#" class="link nav--link modal-able" data-modal="modal-feature">НОХЧИЙН</a>
             </div>
 
 
@@ -40,7 +53,7 @@
     </header>
     
 
-    <!-- Main -->
+    <!-- main -->
 
     <section class="main">
         <div class="main__side"></div>
@@ -66,39 +79,39 @@
             <section class="main-page page-2">
                 <h1 class="main__title page-2-title">What's New</h1>
                 <div class="link-archive__inner">
-                    <a href="#" class="link link-archive">Data-Labs is back</a>
+                    <a class="link link-archive modal-able" data-modal="modal-feature">Data-Labs is back</a>
                     <div class="link-archive-filter blue">Development</div>
                 </div>
 
                 <div class="link-archive__inner">
-                    <a href="#" class="link link-archive">New schedule and groups for 2023</a>
+                    <a class="link link-archive modal-able" data-modal="modal-feature">New schedule and groups for 2023</a>
                     <div class="link-archive-filter red">News</div>
                 </div>
 
                 <div class="link-archive__inner">
-                    <a href="#" class="link link-archive">We got domain name now!</a>
+                    <a class="link link-archive modal-able" data-modal="modal-feature">We got domain name now!</a>
                     <div class="link-archive-filter red">News</div>
                 </div>
 
                 <div class="link-archive__inner">
-                    <a href="#" class="link link-archive">Garage Archive soon to be available</a>
+                    <a class="link link-archive modal-able" data-modal="modal-feature">Garage Archive soon to be available</a>
                     <div class="link-archive-filter blue">Development</div>
                     <div class="link-archive-filter green">Website</div>
                 </div>
 
                 <div class="link-archive__inner">
-                    <a href="#" class="link link-archive">Development of Planta Systems begins</a>
+                    <a class="link link-archive modal-able" data-modal="modal-feature">Development of Planta Systems begins</a>
                     <div class="link-archive-filter blue">Development</div>
                 </div>
 
                 <div class="link-archive__inner">
-                    <a href="#" class="link link-archive">Launch of Garage "⠛⠁⠗⠁⠛⠑" Code</a>
+                    <a class="link link-archive modal-able" data-modal="modal-feature">Launch of Garage "⠛⠁⠗⠁⠛⠑" Code</a>
                     <div class="link-archive-filter green">Website</div>
                     <div class="link-archive-filter red">News</div>
                 </div>
 
                 <div class="link-archive__inner">
-                    <a href="#" class="link link-archive">Launch of Garage "⠛⠁⠗⠁⠛⠑" Agency</a>
+                    <a class="link link-archive modal-able" data-modal="modal-feature">Launch of Garage "⠛⠁⠗⠁⠛⠑" Agency</a>
                     <div class="link-archive-filter green">Website</div>
                     <div class="link-archive-filter red">News</div>
                 </div>
@@ -293,24 +306,24 @@
          
     </section>
 
-    <!-- Footer -->
+    <!-- footer -->
     <div class="container">    
     <section class="footer">
     <svg class="logo header-logo" viewBox="0 0 260 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="currentColor"/><circle cx="5" cy="25" r="5" fill="currentColor"/><circle cx="35" cy="25" r="5" fill="currentColor"/><circle cx="65" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="25" r="5" fill="currentColor"/><circle cx="95" cy="45" r="5" fill="currentColor"/><circle cx="115" cy="25" r="5" fill="currentColor"/><circle cx="145" cy="5" r="5" fill="currentColor"/><circle cx="35" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="25" r="5" fill="currentColor"/><circle cx="205" cy="25" r="5" fill="currentColor"/><circle cx="235" cy="5" r="5" fill="currentColor"/><circle cx="255" cy="25" r="5" fill="currentColor"/><circle cx="205" cy="5" r="5" fill="currentColor"/></svg>
    
     
     <div class="footer__inner">
-        <a href="#" class="link footer-link">documents</a>
-        <a href="#" class="link footer-link">interests</a>
-        <a href="#" class="link footer-link">advertisment</a>
-        <a href="#" class="link footer-link">brand use</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">documents</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">interests</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">advertisment</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">brand use</a>
     </div>
 
     <div class="footer__inner">
-        <a href="#" class="link footer-link">process</a>
-        <a href="#" class="link footer-link">pricing</a>
-        <a href="#" class="link footer-link">about</a>
-        <a href="#" class="link footer-link">schedule</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">process</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">pricing</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">about</a>
+        <a class="link footer-link modal-able" data-modal="modal-feature">schedule</a>
     </div>
     
 
@@ -319,6 +332,7 @@
 
     <canvas id="gradient-canvas" data-transition-in>
     <script src="three/build/three.js"></script>
+    <script src="scripts/main.js"></script>
 
     <!-- <script>
      const scene = new THREE.Scene();
