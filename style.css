@@ -98,6 +98,11 @@ canvas {
     margin: 0;
 }
 
+.link-split {
+    display: flex;
+    align-items: center;
+}
+
 .blur {
     position: fixed;
     width: 100%;
@@ -221,7 +226,6 @@ canvas {
 
 .archive-link {
     padding: 0.5em 0;
-    font-size: 12px;
 }
 
 .archive-link:hover {
