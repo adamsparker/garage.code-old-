@@ -201,6 +201,37 @@ canvas {
     font-size: 0.7em;
 }
 
+/*    Archive    */
+
+.archive {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 3em;
+}
+
+.archive__header {
+    padding: 3em 3em;
+}
+
+.archive-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.archive-link {
+    padding: 0.5em 0;
+}
+
+.archive-link:hover {
+    background-color: white;
+    color: #000000;
+}
+
+.archive-theme {
+    margin-right: 1em;
+}
+
 /*     Main      */
 
 .main {
