@@ -221,6 +221,7 @@ canvas {
 
 .archive-link {
     padding: 0.5em 0;
+    font-size: 12px;
 }
 
 .archive-link:hover {
