@@ -259,7 +259,7 @@ canvas {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    margin: 9em 0;
 }
 
 .main__title {
