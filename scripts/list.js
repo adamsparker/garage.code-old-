@@ -25,7 +25,7 @@ var list = [
     },
     {
         "name": "Vitagrov Akhmed",
-        "score": "83",
+        "score": "115",
     },
     {
         "name": "Istamulova Eset",
@@ -45,7 +45,7 @@ var list = [
     },
     {
         "name": "Usuphadjiev Bai-Eli",
-        "score": "28",
+        "score": "68",
     },
     {
         "name": "Takaev Damir",
