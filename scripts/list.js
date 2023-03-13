@@ -17,7 +17,7 @@ var list = [
     },
     {
         "name": "Dagaev Khamzat",
-        "score": "65",
+        "score": "135",
     },
     {
         "name": "Tagaev Muslim",
