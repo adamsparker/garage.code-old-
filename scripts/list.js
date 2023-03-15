@@ -25,11 +25,11 @@ var list = [
     },
     {
         "name": "Vitagrov Akhmed",
-        "score": "115",
+        "score": "132",
     },
     {
         "name": "Istamulova Eset",
-        "score": "37",
+        "score": "56",
     },
     {
         "name": "Hizriev Umar",
@@ -61,7 +61,7 @@ var list = [
     },
     {
         "name": "Aliev Amir",
-        "score": "05",
+        "score": "21",
     },
 ]
 
