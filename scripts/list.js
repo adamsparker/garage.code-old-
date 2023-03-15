@@ -59,6 +59,10 @@ var list = [
         "name": "Aliev Askhab",
         "score": "NA",
     },
+    {
+        "name": "Aliev Amir",
+        "score": "05",
+    },
 ]
 
 document.getElementById('G1').innerHTML = list[1].score;
@@ -75,6 +79,7 @@ document.getElementById('G11').innerHTML = list[11].score;
 document.getElementById('G12').innerHTML = list[12].score;
 document.getElementById('G13').innerHTML = list[13].score;
 document.getElementById('G14').innerHTML = list[14].score;
+document.getElementById('G15').innerHTML = list[15].score;
 
 document.getElementById('G1-P').setAttribute("Data-Value", list[1].score);
 document.getElementById('G2-P').setAttribute("Data-Value", list[2].score);
@@ -90,5 +95,18 @@ document.getElementById('G11-P').setAttribute("Data-Value", list[11].score);
 document.getElementById('G12-P').setAttribute("Data-Value", list[12].score);
 document.getElementById('G13-P').setAttribute("Data-Value", list[13].score);
 document.getElementById('G14-P').setAttribute("Data-Value", list[14].score);
+document.getElementById('G15-P').setAttribute("Data-Value", list[15].score);
 
+window.addEventListener('load', function() {
 
+    const section = document.querySelector('#garage-section');
+    const sortedDivs = document.createElement('div');
+    const divs = [...section.querySelectorAll('.link-archive__inner')];
+
+    divs.sort((a, b) => b.getAttribute('data-value') - a.getAttribute('data-value'));
+    divs.forEach(div => {
+        sortedDivs.appendChild(div);
+    });
+
+    section.appendChild(sortedDivs);
+    });

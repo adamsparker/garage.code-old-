@@ -246,6 +246,12 @@
                     <div class="link-archive-filter green">ПРОШЁЛ</div>
                     <div class="link-archive-filter blue">ФРИЛАНС</div>
                 </div>
+                <div class="link-archive__inner" id="G15-P">
+                    <div class="link-archive-filter white" id="G15"></div>
+                    <a href="#" class="link link-archive">Алиев Амир Артурович</a>
+                    <div class="link-archive-filter green">ПРОШЁЛ</div>
+                    <div class="link-archive-filter white">РАБОТАЕТ</div>
+                </div>
             </section>  
             <section class="main-page groups-page">
                 <h1 class="main__title groups-3-subtitle">Группы</h1>
@@ -275,6 +281,7 @@
                         <a href="#" class="link link-group">Хизриев Умар</a>
                         <a href="#" class="link link-group">Эстамулова Эсет</a>
                         <a href="#" class="link link-group">Витаргов Ахмад</a>
+                        <a href="#" class="link link-group">Алиев Амир</a>
                     </div>
 
                     
@@ -290,6 +297,7 @@
                         <a href="#" class="link link-group">Тагаев Муслим</a>
                         <a href="#" class="link link-group">Хасуев Аслан</a>
                         <a href="#" class="link link-group">Дадаев Дени</a>
+                        <a href="#" class="link link-group">Алиев Амир</a>
                     </div>
                     <div class="group" id="group2">
                         <div class="link-archive-filter blue">ПЯТНИЦА</div>
@@ -399,30 +407,6 @@
     <!-- Garage Code list script -->
 
     <script src="scripts/list.js"></script>
-
-   <script>
-    window.addEventListener('load', function() {
-
-    const section = document.querySelector('#garage-section');
-
-    // create a new div element to hold the sorted elements
-    const sortedDivs = document.createElement('div');
-
-    // get all the div elements with the class "link-archive__inner"
-    const divs = [...section.querySelectorAll('.link-archive__inner')];
-
-    // sort the div elements in decreasing order based on their data-value attribute
-    divs.sort((a, b) => b.getAttribute('data-value') - a.getAttribute('data-value'));
-
-    // append the sorted div elements to the new div element
-    divs.forEach(div => {
-        sortedDivs.appendChild(div);
-    });
-
-    // append the new div element with the sorted elements to the section element
-    section.appendChild(sortedDivs);
-    });
-   </script>
 
 </body>
 </html>
