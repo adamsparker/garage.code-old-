@@ -33,7 +33,7 @@ var list = [
     },
     {
         "name": "Hizriev Umar",
-        "score": "49",
+        "score": "75",
     },
     {
         "name": "Umarov Zaur",
@@ -45,7 +45,7 @@ var list = [
     },
     {
         "name": "Usuphadjiev Bai-Eli",
-        "score": "68",
+        "score": "88",
     },
     {
         "name": "Takaev Damir",
@@ -75,4 +75,20 @@ document.getElementById('G11').innerHTML = list[11].score;
 document.getElementById('G12').innerHTML = list[12].score;
 document.getElementById('G13').innerHTML = list[13].score;
 document.getElementById('G14').innerHTML = list[14].score;
+
+document.getElementById('G1-P').setAttribute("Data-Value", list[1].score);
+document.getElementById('G2-P').setAttribute("Data-Value", list[2].score);
+document.getElementById('G3-P').setAttribute("Data-Value", list[3].score);
+document.getElementById('G4-P').setAttribute("Data-Value", list[4].score);
+document.getElementById('G5-P').setAttribute("Data-Value", list[5].score);
+document.getElementById('G6-P').setAttribute("Data-Value", list[6].score);
+document.getElementById('G7-P').setAttribute("Data-Value", list[7].score);
+document.getElementById('G8-P').setAttribute("Data-Value", list[8].score);
+document.getElementById('G9-P').setAttribute("Data-Value", list[9].score);
+document.getElementById('G10-P').setAttribute("Data-Value", list[10].score);
+document.getElementById('G11-P').setAttribute("Data-Value", list[11].score);
+document.getElementById('G12-P').setAttribute("Data-Value", list[12].score);
+document.getElementById('G13-P').setAttribute("Data-Value", list[13].score);
+document.getElementById('G14-P').setAttribute("Data-Value", list[14].score);
+
 
