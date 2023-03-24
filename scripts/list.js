@@ -5,15 +5,15 @@ var list = [
     },
     {
         "name": "Khasuev Aslam",
-        "score": "119",
+        "score": "319",
     },
     {
         "name": "Dadaev Deni",
-        "score": "99",
+        "score": "149",
     },
     {
         "name": "Ulubaev Aslan",
-        "score": "64",
+        "score": "74",
     },
     {
         "name": "Dagaev Khamzat",
@@ -21,11 +21,11 @@ var list = [
     },
     {
         "name": "Tagaev Muslim",
-        "score": "83",
+        "score": "183",
     },
     {
         "name": "Vitagrov Akhmed",
-        "score": "132",
+        "score": "144",
     },
     {
         "name": "Istamulova Eset",
@@ -33,7 +33,7 @@ var list = [
     },
     {
         "name": "Hizriev Umar",
-        "score": "75",
+        "score": "85",
     },
     {
         "name": "Umarov Zaur",
@@ -61,7 +61,7 @@ var list = [
     },
     {
         "name": "Aliev Amir",
-        "score": "21",
+        "score": "33",
     },
 ]
 
