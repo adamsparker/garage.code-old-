@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>⠛⠁⠗⠁⠛⠑</title>
 </head>
-<body>
-
+<body> 
      <!-- modal -->
      <div class="modal-holder" id="modal-feature">
         <div class="blur"></div>
@@ -56,30 +55,33 @@
 
             <svg class="logo header-logo" viewBox="0 0 260 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="currentColor"/><circle cx="5" cy="25" r="5" fill="currentColor"/><circle cx="35" cy="25" r="5" fill="currentColor"/><circle cx="65" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="5" r="5" fill="currentColor"/><circle cx="95" cy="25" r="5" fill="currentColor"/><circle cx="95" cy="45" r="5" fill="currentColor"/><circle cx="115" cy="25" r="5" fill="currentColor"/><circle cx="145" cy="5" r="5" fill="currentColor"/><circle cx="35" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="5" r="5" fill="currentColor"/><circle cx="185" cy="25" r="5" fill="currentColor"/><circle cx="205" cy="25" r="5" fill="currentColor"/><circle cx="235" cy="5" r="5" fill="currentColor"/><circle cx="255" cy="25" r="5" fill="currentColor"/><circle cx="205" cy="5" r="5" fill="currentColor"/></svg>
 
+            <div class="inner-split">
             <h2 class="header__text">digital "garage" agency <br> we all start somewhere</h2>
 
             <div class="link__inner">
                 <a class="link nav--link modal-able" data-modal="modal-feature">главная</a>
                 <a class="link nav--link modal-able" data-modal="modal-feature">работа</a>
                 <a class="link nav--link modal-able" data-modal="modal-feature">о нас</a>
-                <a href="archive.html" class="link nav--link">архив</a>
+                <a href="docs/archive.html" class="link nav--link">архив</a>
                 <a class="link nav--link modal-able" data-modal="modal-feature">контакты</a>
             </div>
             </div>
-
-            <h2 class="header__text">Грозный ПН 12:30</h2>
-
-            <div class="link__inner">
-                <a href="index-en.html" class="link nav--link">ENGLISH</a>
-                <a href="index.html" class="link nav--link">РУССКИЙ</a>
-                <a href="index-ch.html" class="link nav--link">НОХЧИЙН</a>
             </div>
+            
+            <h2 class="header__text">Грозный <span id="day"></span> <span id="time"></span> </h2>
+            <div class="link__inner language-link" style="flex-direction: row;">
+                <a href="index-en.html" class="link nav--link">ENG</a>
+                <a href="index.html" class="link nav--link">РУС</a>
+                <a href="index-ch.html" class="link nav--link">НХЧ</a>
+            </div>
+            
 
         </div>
     </header>
 
     <!-- main -->
 
+    <div class="container">
     <section class="main">
         <div class="main__side"></div>
         <div class="main__inner">
@@ -142,6 +144,30 @@
                 </div>
             </section>
 
+            <section class="main-page partners-page">
+                <!-- <h1 class="main__title">Партнёры</h1> -->
+
+                <div class="partners__inner">
+                    
+                        <div class="partner__item">
+                            <img src="assets/partners/DMI.png" alt="" class="partner">
+                        </div>
+
+                        <div class="partner__item">
+                            <img src="assets/partners/CODE.png" alt="" class="partner">
+                        </div>
+
+                        <div class="partner__item">
+                            <img src="assets/partners/Sinergy.png" alt="" class="partner">
+                        </div>
+
+                        <div class="partner__item">
+                            <img src="assets/partners/zion.png" alt="" class="partner">
+                        </div>
+            </div>
+
+            </section>  
+
             <section class="main-page crew-page">
                 <h1 class="main__title">Команда</h1>
 
@@ -167,10 +193,23 @@
                             <p class="crew-subtitle">контакты</p>
                             <h2 class="crew-title">+7 929 888-20-60 <br> gakaev.b@mail.ru</h2>
                         </div>
-                        
                     </div>
+                    <div class="crew-member ">
+                        <div class="crew-subtitle__inner">
+                            <p class="crew-subtitle">имя</p>
+                            <h2 class="crew-title">АХМАТОВ<br>АНЗОР</h2>
+                            <div class="link-archive-filter blue crew-job" id="kill-margin">MANAGER</div>
+                        </div>
+                        <div class="crew-title__inner">
+                            <p class="crew-subtitle">контакты</p>
+                            <h2 class="crew-title">+7 929 894-14-50<br> anzor-mngr@bk.ru</h2>
+                        </div>
+                    </div>  
                 </div>
+                
             </section>
+
+           
 
 
             <section class="main-page page-3" id="garage-section">
@@ -341,7 +380,7 @@
                 </div>
             </section>  
     </section>
-
+    </div>
     <!-- footer -->
     <div class="container">    
     <section class="footer">
@@ -367,6 +406,7 @@
     <canvas id="gradient-canvas" data-transition-in>
     <script src="three/build/three.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/date.js"></script>
 
     <!-- <script>
      const scene = new THREE.Scene();
