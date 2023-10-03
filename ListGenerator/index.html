@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список обучающихся</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+</head>
+<body>
+
+    <div class="header__inner">
+        <h1 class="header__title">Генератор списков для ленивых педагогов</h1>
+        <div class="button__inner">
+            <button class="generate__button" id="generateButton">Добавить одного</button>
+            <button class="generate__button" id="generateButton15">Добавить 15 человек</button>
+            <button class="generate__button" id="saveButton">Скачать docx</button>
+        </div>
+    </div>
+
+   
+    <table id="studentsTable">
+        <tr>
+            <th>№</th>
+            <th>ФИО обучающегося</th>
+            <th>Дата рождения 
+                
+                <!-- <select id="ageRange">
+                  <option value="0-5">0-5 лет</option>
+                  <option value="6-10">6-10 лет</option>
+                  <option value="11-15">11-15 лет</option>
+                  <option value="16-18">16-18 лет</option>
+                </select> -->
+            
+            </th>
+            <th>Класс</th>
+            <th>№ школы</th>
+            <th>ФИО родителя</th>
+            <th>Домашний адрес, контактный телефон</th>
+            <th>СНИЛС</th>
+        </tr>
+    </table>    
+    <canvas id="gradient-canvas" data-transition-in>
+    
+    <script src="./scripts/main.js"></script>
+
+    <script type="module">
+
+        import { Gradient } from '/scripts/gradient.js'
+    
+        // Create your instance
+        const gradient = new Gradient()
+        // Call `initGradient` with the selector to your canvas
+        gradient.initGradient('#gradient-canvas')
+    
+    </script>
+    
+    <script>
+        document.getElementById('saveButton').addEventListener('click', function() {
+            var table = document.getElementById('studentsTable');
+            var content = '<table border="1">' + table.innerHTML + '</table>';
+
+            var blob = new Blob([content], { type: 'application/msword' });
+            saveAs(blob, 'списки.doc');
+        });
+    </script>
+
+</body>
+</html>
