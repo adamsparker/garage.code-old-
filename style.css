@@ -58,15 +58,15 @@ canvas {
   }
 
 .green {
-    background-color: #13BE78;
+    background-color: #ffffff;
 }
 
 .red {
-    background-color: #be3513;
+    background-color: #ffffff;
 }
 
 .blue { 
-    background-color: #13beb5;
+    background-color: #ffffff;
 }
 
 .golden {
@@ -88,6 +88,10 @@ canvas {
 
 .white {
     background-color: #ffffff;
+}
+
+.faded {
+    background-color: #ffffff50;
 }
 
 .container {
@@ -177,10 +181,10 @@ canvas {
 #gradient-canvas {
     width:100%;
     height:100%;
-    --gradient-color-1: #269f8f; 
-    --gradient-color-2: #328d5f; 
-    --gradient-color-3: #6dd49a;  
-    --gradient-color-4: #26655d;
+    --gradient-color-1: #FCD201; 
+    --gradient-color-2: #FC560B; 
+    --gradient-color-3: #F63AA0;  
+    --gradient-color-4: #0360E7;
     
   /*--gradient-color-1: #2D3E50; 
     --gradient-color-2: #01C26E; 
@@ -219,7 +223,7 @@ canvas {
 }
 
 .header-logo {
-    width: 7em;
+    width: 10em;
 }
 
 .header__text {
@@ -250,6 +254,7 @@ canvas {
 .main__title {
     font-size: clamp(2.7rem, 3.5vw, 5.3rem);
     margin-bottom: 1em;
+    line-height: 3rem;
     /* text-transform: uppercase; ПОСМОТРЕТЬ С БЕКХАНОМ */
 }
 
@@ -259,16 +264,22 @@ canvas {
     margin: 2em 0;
 }
 
+.block-subtitle {
+    background-color: #ffffff;
+    display: inline;
+    color: #000000;
+    
+}
+
 .main-block {
     background-color: #000000;
     border-radius: 10px;
-    padding: 1em;
+    padding: 14em 0em 2em 2em;
     transition: .3s all;
-    background: url(assets/images/block1.png) left no-repeat, #0c0c0c;
+    background: url(assets/images/block1.jpg) left no-repeat, #0c0c0c;
     background-position: center;
     background-size: 130%;
     filter: grayscale(1);
-
 }
 
 .main-block:hover {
@@ -406,7 +417,7 @@ canvas {
 
 .crew-title {
     line-height: 1.5em;
-    margin: 0.5em 0;
+    margin: 1em 0;
 }
 
 .crew-job {
@@ -414,10 +425,26 @@ canvas {
     font-size: 14px;
 }
 
+.apply-btn {
+    color: white;
+    border: 2px solid white;
+    transition: .2s all;
+}
+
+.apply-btn:hover {
+    background: url(assets/images/btn-bg.png) center no-repeat, #0c0c0c;
+    background-size: 100%;
+    border: 2px solid white;
+    color: #000000;
+    transition: .2s all;
+
+}
+
 /*     Partners     */
 
 .partners__inner {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     width: 100%;
     justify-content: space-between;
 }
@@ -518,10 +545,16 @@ canvas {
         display: block;
     }
 
-    .partners-page {
-        display: none;
+    .partners__inner {
+        display: grid;
+      
     }
-    
+
+    .partner__item {
+        margin: 2em;
+        height: 4em;
+    }
+
     .container {
         width: unset;
     }

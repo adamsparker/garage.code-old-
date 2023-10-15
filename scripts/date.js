@@ -3,13 +3,13 @@ const getCurrentTimeDate = () => {
         let currentTimeDate = new Date();
 
         var weekday = new Array(7);
-        weekday[0] = "ВС";
-        weekday[1] = "ПН";
-        weekday[2] = "ВТ";
-        weekday[3] = "СР";
-        weekday[4] = "ЧТ";
-        weekday[5] = "ПТ";
-        weekday[6] = "СБ";
+        weekday[0] = "ВОСКРЕСЕНЬЕ";
+        weekday[1] = "ПОНЕДЕЛЬНИК";
+        weekday[2] = "ВТОРНИК";
+        weekday[3] = "СРЕДА";
+        weekday[4] = "ЧЕТВЕРГ";
+        weekday[5] = "ПЯТНИЦА";
+        weekday[6] = "СУББОТА";
 
         var month = new Array();
         month[0] = "JAN";
