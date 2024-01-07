@@ -30,7 +30,7 @@ const getCurrentTimeDate = () => {
         var minutes =  currentTimeDate.getMinutes();
         minutes = minutes < 10 ? '0'+minutes : minutes;
 
-         var AMPM = hours >= 12 ? 'PM' : 'AM';
+         var AMPM = hours >= 12 ? 'AM' : 'PM';
 
         if(hours === 12){
             hours=12;
@@ -53,7 +53,7 @@ const getCurrentTimeDate = () => {
 
         document.getElementById("time").innerHTML = currentTime;
         document.getElementById("day").innerHTML = currentDay;
-        document.getElementById("date").innerHTML = fullDate;
+        // document.getElementById("date").innerHTML = fullDate;
 
         setTimeout(getCurrentTimeDate, 500);
 

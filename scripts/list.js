@@ -49,19 +49,44 @@ var list = [
     },
     {
         "name": "Takaev Damir",
-        "score": "00",
+        "score": "29",
     },
     {
         "name": "Bikaev Magomed",
-        "score": "NA",
+        "score": "25",
     },
     {
         "name": "Aliev Askhab",
-        "score": "NA",
+        "score": "32",
     },
     {
         "name": "Aliev Amir",
         "score": "33",
+    },
+    //ADELE
+    {
+        "name": "Gizzatullina Samira",
+        "score": "00",
+    },
+    {
+        "name": "Shangareeva Samira",
+        "score": "00",
+    },
+    {
+        "name": "Kanibekov Samaridin",
+        "score": "00",
+    },
+    {
+        "name": "Lubimov Maxim",
+        "score": "00",
+    },
+    {
+        "name": "Raskita Timur",
+        "score": "00",
+    },
+    {
+        "name": "Khusainov Musa",
+        "score": "00",
     },
 ]
 
@@ -81,6 +106,15 @@ document.getElementById('G13').innerHTML = list[13].score;
 document.getElementById('G14').innerHTML = list[14].score;
 document.getElementById('G15').innerHTML = list[15].score;
 
+document.getElementById('A16').innerHTML = list[16].score;
+document.getElementById('A17').innerHTML = list[17].score;
+document.getElementById('A18').innerHTML = list[18].score;
+document.getElementById('A19').innerHTML = list[19].score;
+document.getElementById('A20').innerHTML = list[20].score;
+document.getElementById('A21').innerHTML = list[21].score;
+
+
+
 document.getElementById('G1-P').setAttribute("Data-Value", list[1].score);
 document.getElementById('G2-P').setAttribute("Data-Value", list[2].score);
 document.getElementById('G3-P').setAttribute("Data-Value", list[3].score);
@@ -96,6 +130,13 @@ document.getElementById('G12-P').setAttribute("Data-Value", list[12].score);
 document.getElementById('G13-P').setAttribute("Data-Value", list[13].score);
 document.getElementById('G14-P').setAttribute("Data-Value", list[14].score);
 document.getElementById('G15-P').setAttribute("Data-Value", list[15].score);
+
+document.getElementById('A16-P').setAttribute("Data-Value", list[16].score);
+document.getElementById('A17-P').setAttribute("Data-Value", list[17].score);
+document.getElementById('A18-P').setAttribute("Data-Value", list[18].score);
+document.getElementById('A19-P').setAttribute("Data-Value", list[19].score);
+document.getElementById('A20-P').setAttribute("Data-Value", list[20].score);
+document.getElementById('A21-P').setAttribute("Data-Value", list[21].score);
 
 window.addEventListener('load', function() {
 
