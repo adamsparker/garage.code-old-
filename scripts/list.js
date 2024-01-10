@@ -74,19 +74,19 @@ var list = [
     },
     {
         "name": "Kanibekov Samaridin",
-        "score": "00",
+        "score": "10",
     },
     {
         "name": "Lubimov Maxim",
-        "score": "00",
+        "score": "10",
     },
     {
         "name": "Raskita Timur",
-        "score": "00",
+        "score": "10",
     },
     {
         "name": "Khusainov Musa",
-        "score": "00",
+        "score": "10",
     },
 ]
 
